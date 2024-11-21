@@ -1,24 +1,23 @@
 # frozen_string_literal: true
 
 # Maintain your gem's version:
-require_relative "lib/publify_textfilter_code/version"
+require_relative "lib/publify_textfilter_youtube/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "publify_textfilter_code"
-  s.version     = PublifyTextfilterCode::VERSION
-  s.authors     = ["Matijs van Zuijlen"]
-  s.email       = ["matijs@matijs.net"]
+  s.name        = "publify_textfilter_youtube"
+  s.version     = PublifyTextfilterYoutube::VERSION
+  s.authors     = ["Brad Johnson"]
+  s.email       = ["climatebrad@gmail.com"]
   s.homepage    = "https://publify.github.io/"
-  s.summary     = "Code text filter for the Publify blogging system."
-  s.description = "Code text filter sidebar for the Publify blogging system."
+  s.summary     = "Youtube text filter for the Publify blogging system."
+  s.description = "Youtube text filter sidebar for the Publify blogging system."
   s.license     = "MIT"
 
   s.files       = File.open("Manifest.txt").readlines.map(&:chomp)
 
   s.required_ruby_version = ">= 3.0.0"
 
-  s.add_dependency "coderay", "~> 1.1.0"
   s.add_dependency "htmlentities", "~> 4.3"
   s.add_dependency "publify_core", "~> 10.0.0"
 

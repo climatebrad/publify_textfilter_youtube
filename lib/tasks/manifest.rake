@@ -6,7 +6,7 @@ namespace :manifest do
       file.match(%r{^(bin|spec)/}) ||
         file.end_with?("/.keep") ||
         file.start_with?(".") ||
-        %w(Manifest.txt Gemfile Rakefile publify_textfilter_code.gemspec).include?(file)
+        %w(Manifest.txt Gemfile Rakefile publify_textfilter_youtube.gemspec).include?(file)
     end
   end
 
