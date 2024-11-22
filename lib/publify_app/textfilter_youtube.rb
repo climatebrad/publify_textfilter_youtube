@@ -11,7 +11,7 @@ class PublifyApp
 
       def self.help_text
         %{
-You can use `<publify:youtube v=eXamPL />` to embed Youtube videos.
+You can use `<publify:youtube v="eXamPL" />` to embed Youtube videos.
 
 This uses the Ruby [Syntax](http://coderay.rubychan.de) module.  Options:
 
@@ -23,12 +23,12 @@ This uses the Ruby [Syntax](http://coderay.rubychan.de) module.  Options:
       end
 
       def self.macrofilter(attrib)
-        video_id = attrib[:v]
+        video_id = attrib["v"]
         return '' unless video_id # Video ID is required
 
-        width = attrib.fetch(:width, DEFAULT_OPTIONS[:width])
-        height = attrib.fetch(:height, DEFAULT_OPTIONS[:height])
-        start = attrib[:start]
+        width = attrib.fetch("width", DEFAULT_OPTIONS[:width])
+        height = attrib.fetch("height", DEFAULT_OPTIONS[:height])
+        start = attrib["start"]
 
         src = "https://www.youtube.com/embed/#{video_id}"
         src += "?start=#{start}" if start
