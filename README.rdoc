@@ -1,3 +1,12 @@
 = PublifyTextfilterYoutube
 
-This project rocks and uses MIT-LICENSE.
+You can use `<publify:youtube v="eXamPL" />` to embed Youtube videos.
+
+Options:
+
+* **v**. Required, the video_id.
+* **width**.  560 by default.
+* **height**.  Height. 315 by default.
+* **start**.  Sets the start time
+
+This project uses MIT-LICENSE.

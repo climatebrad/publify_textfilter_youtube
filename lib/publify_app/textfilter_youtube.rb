@@ -13,7 +13,7 @@ class PublifyApp
         %{
 You can use `<publify:youtube v="eXamPL" />` to embed Youtube videos.
 
-This uses the Ruby [Syntax](http://coderay.rubychan.de) module.  Options:
+Options:
 
 * **v**. Required, the video_id.
 * **width**.  560 by default.
