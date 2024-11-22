@@ -26,19 +26,18 @@ This uses the Ruby [Syntax](http://coderay.rubychan.de) module.  Options:
         video_id = attrib[:v]
         return '' unless video_id # Video ID is required
 
-        width = attrib.fetch(:width, '560')
-        height = attrib.fetch(:height, '315')
+        width = attrib.fetch(:width, DEFAULT_OPTIONS[:width])
+        height = attrib.fetch(:height, DEFAULT_OPTIONS[:height])
         start = attrib[:start]
 
         src = "https://www.youtube.com/embed/#{video_id}"
         src += "?start=#{start}" if start
 
-         <<~HTML
-<iframe width="#{width}" height="#{height}" src="#{src}" frameborder="0"
- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
- referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-</iframe>
-         HTML
+        "<iframe width=\"#{width}\" height=\"#{height}\" src=\"#{src}\" frameborder=\"0\"" \
+        ' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;' \
+        ' picture-in-picture; web-share"' \
+        ' referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>' \
+        '</iframe>'
       end
     end
   end

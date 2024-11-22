@@ -36,7 +36,7 @@ RSpec/ExampleLength:
 # Include: **/*_spec*rb*, **/spec/**/*
 RSpec/FilePath:
   Exclude:
-    - 'spec/lib/publify_app/textfilter_code_spec.rb'
+    - 'spec/lib/publify_app/textfilter_youtube_spec.rb'
 
 RSpec/NestedGroups:
   Max: 5
@@ -52,5 +52,5 @@ Style/GuardClause:
 # SupportedStyles: implicit, explicit
 Style/RescueStandardError:
   Exclude:
-    - 'lib/publify_app/textfilter_code.rb'
+    - 'lib/publify_app/textfilter_youtube.rb'
     - 'spec/dummy/db/migrate/20160716093730_add_blog_ids.publify_core_engine.rb'

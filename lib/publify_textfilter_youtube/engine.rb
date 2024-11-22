@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module PublifyTextfilterCode
+module PublifyTextfilterYoutube
   class Engine < ::Rails::Engine
   end
 end
