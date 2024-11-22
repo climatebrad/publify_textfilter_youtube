@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = PublifyTextfilterYoutube::VERSION
   s.authors     = ["Brad Johnson"]
   s.email       = ["climatebrad@gmail.com"]
-  s.homepage    = "https://publify.github.io/"
+  s.homepage    = "https://github.com/climatebrad/publify_textfilter_youtube"
   s.summary     = "Youtube text filter for the Publify blogging system."
   s.description = "Youtube text filter sidebar for the Publify blogging system."
   s.license     = "MIT"
@@ -18,7 +18,6 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = ">= 3.0.0"
 
-  s.add_dependency "htmlentities", "~> 4.3"
   s.add_dependency "publify_core", "~> 10.0.0"
 
   s.add_development_dependency "rspec-rails", "~> 6.0"
