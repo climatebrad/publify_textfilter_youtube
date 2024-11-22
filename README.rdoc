@@ -1,6 +1,6 @@
 = PublifyTextfilterYoutube
 
-You can use `<publify:youtube v="eXamPL" />` to embed Youtube videos.
+You can use <code><publify:youtube v="eXamPL" /></code> to embed Youtube videos.
 
 Options:
 
