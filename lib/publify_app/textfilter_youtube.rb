@@ -33,7 +33,7 @@ Options:
         src = "https://www.youtube.com/embed/#{video_id}"
         src += "?start=#{start}" if start
 
-        "<iframe width=\"#{width}\" height=\"#{height}\" src=\"#{src}\" frameborder=\"0\"" \
+        %(<iframe width="#{width}" height="#{height}" src="#{src}" frameborder="0") \
         ' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;' \
         ' picture-in-picture; web-share"' \
         ' referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>' \
