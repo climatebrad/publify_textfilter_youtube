@@ -2,7 +2,7 @@
 
 class PublifyApp
   class Textfilter
-    class Youtube < TextFilterPlugin::MacroPre
+    class Youtube < TextFilterPlugin::MacroPost
       plugin_display_name "Youtube"
       plugin_description "Embed Youtube videos"
 
